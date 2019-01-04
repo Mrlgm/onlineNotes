@@ -17,15 +17,15 @@ module.exports = {
     // configuration regarding modules
     rules: [
       // rules for modules (configure loaders, parser options, etc.)
-      {
-        test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader']
-      },
+      // {
+      //   test: /\.less$/,
+      //   use: ['style-loader', 'css-loader', 'less-loader']
+      // },
     ]
   },
   resolve: {
     alias: {
-      jquery: path.join(__dirname, 'js/mod'),
+      jquery: path.join(__dirname, 'js/lib/jquery-3.3.1.min.js'),
       mod: path.join(__dirname, "js/mod"),
       less: path.join(__dirname, "less")
     },
